@@ -7,10 +7,10 @@ import winsound
 from twilio.rest import Client
 from twilio.twiml.voice_response import VoiceResponse
 # Twilio credentials
-account_sid = "AC3a11c9172b5e5399c1834eb12e258add"
-auth_token = "1fe770fe1a89f04efe6088e7654bbed0"
-twilio_phone_number = "+17178028182"
-emergency_contact_number = "+919360165802"
+account_sid = "your id"
+auth_token = "your twilio token"
+twilio_phone_number = "your twilio number"
+emergency_contact_number = "your mob number"
 def eyeAspectRatio(eye):
     A = dist.euclidean(eye[1], eye[5])
     B = dist.euclidean(eye[2], eye[4])
