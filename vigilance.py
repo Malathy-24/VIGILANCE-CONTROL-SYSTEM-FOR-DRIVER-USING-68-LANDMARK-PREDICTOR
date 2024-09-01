@@ -20,7 +20,7 @@ def eyeAspectRatio(eye):
 def send_alert_message():
     client = Client(account_sid, auth_token)
     try:
-         message = client.messages.create( to=emergency_contact_number,from_=twilio_phone_number,body="Emergency! Please check the location, Tracking URL: https://maps.app.goo.gl/xfrgGqw4zJy1DRSr8",)
+         message = client.messages.create( to=emergency_contact_number,from_=twilio_phone_number,body="Emergency! Please check the location")
          print(f"Alert message sent to {emergency_contact_number}. Message SID: {message.sid}")
     except Exception as e:
         print(f"Error sending alert message: {str(e)}")
